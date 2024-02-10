@@ -8,6 +8,11 @@ require("dotenv").config();
 // Middleware
 app.use(express.json());
 app.use(cors());
+// app.use(cors({
+//   origin: "http://localhost:3000",
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   credentials: true
+// }));
 
 // Create Nodemailer transporter
 let transporter = nodemailer.createTransport({
